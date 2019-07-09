@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Page View Controller-->
+        <scene sceneID="Ve6-uh-xiV">
+            <objects>
+                <viewController storyboardIdentifier="WebViewPageViewController" id="KkH-bx-MmX" customClass="WebViewPageViewController" customModule="GetSetGoJQCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1dn-Ga-rXP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moE-Ti-lsH" customClass="GradientView" customModule="GetSetGoJQCoin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="p" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bht-g0-un0">
+                                        <rect key="frame" x="182" y="41.5" width="11" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPo-20-2Ko">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="75"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="sgc-hJ-oMJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.47450980390000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="QPo-20-2Ko" firstAttribute="top" secondItem="moE-Ti-lsH" secondAttribute="top" id="0tO-RX-y7N"/>
+                                    <constraint firstAttribute="height" constant="75" id="613-Jk-jFP"/>
+                                    <constraint firstItem="bht-g0-un0" firstAttribute="centerX" secondItem="moE-Ti-lsH" secondAttribute="centerX" id="J7M-f0-JYp"/>
+                                    <constraint firstAttribute="bottom" secondItem="QPo-20-2Ko" secondAttribute="bottom" id="JBW-xM-sEd"/>
+                                    <constraint firstItem="bht-g0-un0" firstAttribute="centerY" secondItem="moE-Ti-lsH" secondAttribute="centerY" constant="15" id="Mgn-t4-wHz"/>
+                                    <constraint firstItem="QPo-20-2Ko" firstAttribute="leading" secondItem="moE-Ti-lsH" secondAttribute="leading" id="ooP-xr-rH1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4t-GN-w0r">
+                                <rect key="frame" x="10" y="42.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="NjV-fI-VtA"/>
+                                    <constraint firstAttribute="height" constant="20" id="WZE-XK-Acu"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="btnClose:" destination="KkH-bx-MmX" eventType="touchUpInside" id="Vmq-tY-4Ce"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3Y-BX-xn4">
+                                <rect key="frame" x="0.0" y="75" width="375" height="592"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KkH-bx-MmX" id="FC7-hv-u8B"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="moE-Ti-lsH" firstAttribute="leading" secondItem="wO7-Xx-5mG" secondAttribute="leading" id="1v0-Xn-9Ia"/>
+                            <constraint firstItem="q4t-GN-w0r" firstAttribute="leading" secondItem="wO7-Xx-5mG" secondAttribute="leading" constant="10" id="4xP-hc-pzB"/>
+                            <constraint firstItem="q4t-GN-w0r" firstAttribute="centerY" secondItem="bht-g0-un0" secondAttribute="centerY" id="Ekh-3x-QXv"/>
+                            <constraint firstItem="wO7-Xx-5mG" firstAttribute="trailing" secondItem="w3Y-BX-xn4" secondAttribute="trailing" id="R5J-nv-2rM"/>
+                            <constraint firstItem="wO7-Xx-5mG" firstAttribute="trailing" secondItem="moE-Ti-lsH" secondAttribute="trailing" id="Zmg-KQ-sbG"/>
+                            <constraint firstItem="wO7-Xx-5mG" firstAttribute="bottom" secondItem="w3Y-BX-xn4" secondAttribute="bottom" id="aUq-je-YMa"/>
+                            <constraint firstItem="w3Y-BX-xn4" firstAttribute="leading" secondItem="wO7-Xx-5mG" secondAttribute="leading" id="srN-DA-sdP"/>
+                            <constraint firstItem="w3Y-BX-xn4" firstAttribute="top" secondItem="moE-Ti-lsH" secondAttribute="bottom" id="vaX-qS-Oiw"/>
+                            <constraint firstItem="moE-Ti-lsH" firstAttribute="top" secondItem="1dn-Ga-rXP" secondAttribute="top" id="zpQ-jd-bcI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wO7-Xx-5mG"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeView" destination="QPo-20-2Ko" id="3cW-RT-R4h"/>
+                        <outlet property="headerView" destination="moE-Ti-lsH" id="EsR-ZT-8jJ"/>
+                        <outlet property="lblTitle" destination="bht-g0-un0" id="qBb-90-H0z"/>
+                        <outlet property="weView" destination="w3Y-BX-xn4" id="Ba6-1M-RJE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJT-uz-oh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="-233.43328335832086"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="51.200000762939453" height="51.200000762939453"/>
+    </resources>
+</document>

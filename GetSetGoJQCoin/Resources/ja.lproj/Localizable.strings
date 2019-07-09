@@ -1,0 +1,91 @@
+/* 
+  Localizable.strings
+  GetSetGoJQCoin
+
+  Created by rozan on 5/17/19.
+  Copyright © 2019 ekbana. All rights reserved.
+*/
+"expiringSoon" = "coupon are expiring soon";
+"achievement" = "Achievements";
+"back" = "バック";
+"help" = "助け";
+"email" = "メールアドレス";
+"password" = "パスワード";
+"alert_session_expired" = "セッションが終了しました。ログアウトしてください。";
+"alert_internet_connection" = "ネットへの接続をご確認ください";
+"alert_unsupported_ar" = "このデバイスはArcoreをサポートしていません。" ;
+"alert_user_email_empty" = "ユーザーネーム又はメールアドレスを入力してください。";
+"alert_password_empty" = "パスワードを入力してください。";
+"alert_opps" = "oops something went wrong";
+"active" = "アクティブ";
+"expire" = "期限切れ";
+"japanese" = "日本語";
+"english" = "English";
+"redeemCouponOnStore" = "お店でクーポンが使えます。";
+"haveClaimedIt" = "これでクーポンはあなたの物！";
+"getHunting" = "クーポンを探してゲットしよう！";
+"viewAll" = "全て見る";
+"hunt" = "Start hunting";
+"startHunt" = "クーポンの検索を開始するにはここをクリック";
+"dashboard" = "ダッシュボード";
+"login_title" = "ログイン";
+"forgot_button" = "パスワードをお忘れですか？";
+"doYouHaveAnAccount" = "アカウントを持っていませんか ?";
+"signup" = "サインアップ";
+"alert" = "アラート";
+"language" = "言語";
+"chooseLanguage" = "言語を選択してください";
+"more" = "もっと見る";
+"disclaimer" = "免責事項";
+"terms_and_conditions" = "契約条件";
+"privacy_policy" = "プライバシーポリシー";
+"logout" = "ログアウト";
+"alert_logout_message" = "ログアウトしますか？";
+"cancel" = "キャンセル";
+"my_coupons" = "マイクーポン";
+"redeemed_on" = "使用日";
+"expired" = "有効期限";
+"expiredOn" = "期限切れ";
+"claimed_on" = "取得日";
+"redeemed" = "使用済みい";
+"claimed" = "取得済み";
+"coupon_details" = "クーポン詳細";
+"redeem_alert_message" = "クーポンを使いますか？";
+"reedem_coupon" = "使う";
+"ok" = "OK";
+"coupon_code" = "クーポンコード :";
+"there_are" = "残り";
+"active_coupons_that_will_expire_soon" = "まもなく有効期限が切れるアクティブクーポン。できるだけ早く使用してください";
+"nearby_coupons" = "近くにあるクーポン";
+"valid_coupons_left" = "個の有効なクーポンがあります";
+"view_all_active_coupons" = "有効なクーポンを見る";
+"notifications" = "お知らせ";
+
+"day" = "日";
+"days" = "日";
+"ago" = "前";
+"minute" = "分";
+"minutes" = "分";
+"hours" = "時間";
+"month" = "月";
+"months" = "月";
+"hour" = "時間";
+"years" = "年";
+"year" = "年";
+"second" = "第二";
+"seconds" = "第二";
+"moment" = "瞬間";
+
+"view_the_details" = "詳細を見る";
+"all" = "全て";
+"expiring_first" = "期限切れ間近";
+"find_coupons_in_the-world!" = "クーポンを探そう！";
+"onboardding_first" = "アプリのダッシュボードからクーポンがある場所に印が出ます。クーポンがある場所まで行って　'Start Hunting'を押してクーポンを探そう！";
+
+"onboardding_second" = "カメラを通して、クーポンを探します。クーポンを見つけたら、タップ！ ";
+"onboardding_third" = "これでクーポンが使えます。";
+"onboardding_forth" = "クーポンを使ってお買い得！";
+"skip" = "スキップ";
+"next" = "次";
+"get_started" = "さあ、始めよう！";
+

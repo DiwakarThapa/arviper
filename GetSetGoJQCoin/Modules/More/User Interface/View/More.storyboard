@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HSb-ou-7T5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Signika-SemiBold.ttf">
+            <string>Signika-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--More-->
+        <scene sceneID="R60-Pu-Hpy">
+            <objects>
+                <viewController storyboardIdentifier="MoreViewController" title="More" id="HSb-ou-7T5" customClass="MoreViewController" customModule="GetSetGoJQCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y1H-iV-BwG"/>
+                        <viewControllerLayoutGuide type="bottom" id="PYB-Kq-ghm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Uc-9s-KgO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashBg" translatesAutoresizingMaskIntoConstraints="NO" id="hRi-q6-aiv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5WK-wF-glU">
+                                <rect key="frame" x="0.0" y="115" width="375" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="uDm-FF-HiH"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MoreTableViewCell" rowHeight="52" id="gdJ-ki-zEj" customClass="MoreTableViewCell" customModule="GetSetGoJQCoin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gdJ-ki-zEj" id="JSc-J8-r6h">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="E2L-U1-aP7">
+                                                    <rect key="frame" x="20" y="12" width="335" height="28"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w8X-aT-ZH9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="26" height="28"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="28" id="2rZ-eJ-Tzi"/>
+                                                                <constraint firstAttribute="width" constant="26" id="Lgk-PY-lCC"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8G-ph-tMQ">
+                                                            <rect key="frame" x="43" y="0.0" width="292" height="28"/>
+                                                            <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika SemiBold" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="e8G-ph-tMQ" firstAttribute="centerY" secondItem="w8X-aT-ZH9" secondAttribute="centerY" id="xbg-g9-os5"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="E2L-U1-aP7" firstAttribute="leading" secondItem="JSc-J8-r6h" secondAttribute="leading" constant="20" id="71O-fk-0Jf"/>
+                                                <constraint firstItem="E2L-U1-aP7" firstAttribute="centerY" secondItem="JSc-J8-r6h" secondAttribute="centerY" id="tGF-N7-rfF"/>
+                                                <constraint firstAttribute="trailing" secondItem="E2L-U1-aP7" secondAttribute="trailing" constant="20" id="zTB-Sl-Son"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="lblMenu" destination="e8G-ph-tMQ" id="x3O-ZW-7c6"/>
+                                            <outlet property="menuIcon" destination="w8X-aT-ZH9" id="HDW-3O-xCO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HSb-ou-7T5" id="cKn-0e-BfY"/>
+                                    <outlet property="delegate" destination="HSb-ou-7T5" id="yzr-go-3AX"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoutBg" translatesAutoresizingMaskIntoConstraints="NO" id="dta-uL-4fr">
+                                <rect key="frame" x="20" y="405" width="335" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="2nH-Oh-Sw3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rk-XV-MYm">
+                                <rect key="frame" x="20" y="405" width="335" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Qgd-pT-eHc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika SemiBold" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogOut:" destination="HSb-ou-7T5" eventType="touchUpInside" id="Pp0-eh-taC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lS2-5s-psS">
+                                <rect key="frame" x="167" y="642.5" width="41" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIi-Xt-Kcp">
+                                <rect key="frame" x="16" y="50" width="104" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SXX-CY-vM4"/>
+                                    <constraint firstAttribute="width" constant="104" id="rnI-0j-Ksd"/>
+                                </constraints>
+                                <state key="normal" image="backImage">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonBack:" destination="HSb-ou-7T5" eventType="touchUpInside" id="mpY-An-UPO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dta-uL-4fr" firstAttribute="trailing" secondItem="4rk-XV-MYm" secondAttribute="trailing" id="4Wa-dK-lfj"/>
+                            <constraint firstAttribute="trailing" secondItem="hRi-q6-aiv" secondAttribute="trailing" id="55j-7M-3GB"/>
+                            <constraint firstItem="hRi-q6-aiv" firstAttribute="top" secondItem="y1H-iV-BwG" secondAttribute="bottom" id="6cN-dV-f3a"/>
+                            <constraint firstItem="4rk-XV-MYm" firstAttribute="leading" secondItem="9Uc-9s-KgO" secondAttribute="leading" constant="20" id="CH6-fI-ijT"/>
+                            <constraint firstAttribute="trailing" secondItem="5WK-wF-glU" secondAttribute="trailing" id="Hbl-XH-ybK"/>
+                            <constraint firstItem="lS2-5s-psS" firstAttribute="centerX" secondItem="9Uc-9s-KgO" secondAttribute="centerX" id="J2j-MK-DDY"/>
+                            <constraint firstItem="5WK-wF-glU" firstAttribute="top" secondItem="KIi-Xt-Kcp" secondAttribute="bottom" constant="25" id="Jxo-OK-meX"/>
+                            <constraint firstItem="dta-uL-4fr" firstAttribute="top" secondItem="4rk-XV-MYm" secondAttribute="top" id="cqB-jW-oFw"/>
+                            <constraint firstItem="KIi-Xt-Kcp" firstAttribute="leading" secondItem="9Uc-9s-KgO" secondAttribute="leading" constant="16" id="cwb-Cy-YHG"/>
+                            <constraint firstItem="hRi-q6-aiv" firstAttribute="leading" secondItem="9Uc-9s-KgO" secondAttribute="leading" id="dZ1-Qc-UNX"/>
+                            <constraint firstItem="PYB-Kq-ghm" firstAttribute="top" secondItem="hRi-q6-aiv" secondAttribute="bottom" id="dcX-xP-Ed3"/>
+                            <constraint firstItem="5WK-wF-glU" firstAttribute="leading" secondItem="9Uc-9s-KgO" secondAttribute="leading" id="flf-rI-qbk"/>
+                            <constraint firstItem="4rk-XV-MYm" firstAttribute="top" secondItem="5WK-wF-glU" secondAttribute="bottom" constant="40" id="jer-CJ-DtB"/>
+                            <constraint firstItem="PYB-Kq-ghm" firstAttribute="top" secondItem="lS2-5s-psS" secondAttribute="bottom" constant="10" id="kHT-lT-vpo"/>
+                            <constraint firstItem="dta-uL-4fr" firstAttribute="leading" secondItem="4rk-XV-MYm" secondAttribute="leading" id="veU-Ec-0Ab"/>
+                            <constraint firstAttribute="trailing" secondItem="4rk-XV-MYm" secondAttribute="trailing" constant="20" id="wQq-DH-Te2"/>
+                            <constraint firstItem="KIi-Xt-Kcp" firstAttribute="top" secondItem="y1H-iV-BwG" secondAttribute="bottom" constant="30" id="yy1-BF-eaq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appVersion" destination="lS2-5s-psS" id="Nav-No-zDF"/>
+                        <outlet property="buttonLogout" destination="4rk-XV-MYm" id="4v0-IS-ka9"/>
+                        <outlet property="tableView" destination="5WK-wF-glU" id="4w6-DZ-nP8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8je-5K-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-958" y="287"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backImage" width="95.5" height="38.5"/>
+        <image name="dashBg" width="362.5" height="724.5"/>
+        <image name="logoutBg" width="260" height="65"/>
+    </resources>
+    <color key="tintColor" red="0.78177064659999995" green="0.55228364470000002" blue="0.018981300289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

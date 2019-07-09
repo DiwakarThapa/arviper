@@ -1,0 +1,93 @@
+/* 
+  Localizable.strings
+  GetSetGoJQCoin
+
+  Created by rozan on 5/17/19.
+  Copyright © 2019 ekbana. All rights reserved.
+*/
+"expiringSoon" = "coupon are expiring soon";
+"achievement" = "Achievements";
+"back" = "BACK";
+"help" = "Help";
+"email" = "Email";
+"password" = "Password";
+"alert_session_expired" = "Your session got expired. You need to logout.";
+"alert_internet_connection" = "check your internet connection and try again.";
+"alert_unsupported_ar" = "Ar is unsupported on this decive" ;
+"alert_user_email_empty" = "Username or email cannot be empty";
+"alert_password_empty" = "Password can not be empty";
+"alert_opps" = "oops something went wrong";
+"active" = "Active";
+"expire" = "Expired";
+"japanese" = "Japanese";
+"english" = "English";
+"redeemCouponOnStore" = "Redeem the coupons in stores.";
+"haveClaimedIt" = "You have claimed it";
+"getHunting" = "Get hunting!! Tap it and claim it.";
+"viewAll" = "View All";
+"hunt" = "Start hunting";
+"startHunt" = "Start Searching For Coupons";
+"dashboard" = "Dashboard";
+"login_title" = "Login";
+"forgot_button" = "Did you forget your password?";
+"doYouHaveAnAccount" = "Do you have an account?";
+"signup" = "Signup";
+"alert" = "Alert";
+"language" = "Language";
+"chooseLanguage" = "Choose the language";
+"more" = "More";
+"disclaimer" = "Disclaimer";
+"terms_and_conditions" = "Terms and conditions";
+"privacy_policy" = "Privacy Policy";
+"logout" = "Logout";
+"alert_logout_message" = "Do you want to logout?";
+"cancel" = "Cancel";
+"my_coupons" = "My Coupons";
+"redeemed_on" = "Redeemed on";
+"expired" = "Exp";
+"expiredOn" = "Expired on";
+"claimed_on" = "Claimed on";
+"redeemed" = "Redeemed";
+"claimed" = "Claimed";
+"coupon_details" = "Coupon Details";
+"redeem_alert_message" = "Do You want to redeem Coupon?";
+"reedem_coupon" = "Reedem Coupon";
+"ok" = "ok";
+"coupon_code" = "Coupon Code :";
+"there_are" = "There are";
+"active_coupons_that_will_expire_soon" = "active coupons that will expire soon. Please use as soon as possible";
+"nearby_coupons" = "Nearby coupons";
+"valid_coupons_left" = "valid coupons left";
+"view_all_active_coupons" = "View all Active Coupons";
+"notifications" = "Notifications";
+
+"day" = "day";
+"days" = "days";
+"ago" = "ago";
+"minute" = "minute";
+"minutes" = "minutes";
+"hours" = "hours";
+"month" = "month";
+"months" = "months";
+"hour" = "hour";
+"years" = "years";
+"year" = "year";
+"second" = "second";
+"seconds" = "seconds";
+"moment" = "a moment";
+
+"view_the_details" = "view the details";
+"all" = "All";
+"expiring_first" = "Expiring first";
+"find_coupons_in_the-world!" = "Find coupons in the world!";
+"onboardding_first" = "The application Dashboard contains the coupon's location which will be pinging on the map. Once you are in the location, click the 'Start Haunting' button to bring Up the Hunter camera and start searching!";
+
+"onboardding_second" = "The hunter camera will display coupons you found as an AR object. Once your camera Verifies the coupon, Tap it!";
+"onboardding_third" = "Once claim process is complete, your coupon is Ready to be redeemed.";
+"onboardding_forth" = "You can redeem coupons and get discounts And offers, once you're ready to make a purchase!";
+
+"skip" = "Skip";
+"next" = "Next";
+"get_started" = "GET STARTED";
+
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgp-nx-876">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientBg" translatesAutoresizingMaskIntoConstraints="NO" id="Ai3-It-FPg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="365"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="365" id="SVW-Ke-tQp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreenCloud" translatesAutoresizingMaskIntoConstraints="NO" id="WIO-QS-2ep">
+                                        <rect key="frame" x="0.0" y="235" width="375" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="54h-ZB-3QF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgMap" translatesAutoresizingMaskIntoConstraints="NO" id="bIZ-I7-T7M">
+                                        <rect key="frame" x="0.0" y="365" width="375" height="302"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walking" translatesAutoresizingMaskIntoConstraints="NO" id="62Q-kg-1Y0">
+                                        <rect key="frame" x="120" y="451" width="135" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="ONh-yT-p9h"/>
+                                            <constraint firstAttribute="width" constant="135" id="wHg-df-Y4l"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getSetGoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="v3H-Fa-PAh">
+                                        <rect key="frame" x="103.5" y="98" width="168" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="3cm-QY-9mo"/>
+                                            <constraint firstAttribute="width" constant="168" id="WH6-fR-9TB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ze-Fz-1qJ">
+                                        <rect key="frame" x="106" y="185" width="163.5" height="33"/>
+                                        <string key="text">Get. Set. Go.
+
+</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WIO-QS-2ep" secondAttribute="trailing" id="42k-Lh-N9D"/>
+                                    <constraint firstItem="62Q-kg-1Y0" firstAttribute="centerX" secondItem="sgp-nx-876" secondAttribute="centerX" id="9an-4m-72G"/>
+                                    <constraint firstItem="v3H-Fa-PAh" firstAttribute="top" secondItem="sgp-nx-876" secondAttribute="top" constant="98" id="Dhk-Uq-RIn"/>
+                                    <constraint firstItem="Ai3-It-FPg" firstAttribute="top" secondItem="sgp-nx-876" secondAttribute="top" id="Fbc-1U-Izr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ai3-It-FPg" secondAttribute="trailing" id="G5z-hq-s07"/>
+                                    <constraint firstItem="6Ze-Fz-1qJ" firstAttribute="top" secondItem="v3H-Fa-PAh" secondAttribute="bottom" constant="15" id="GhN-KN-Ojn"/>
+                                    <constraint firstItem="v3H-Fa-PAh" firstAttribute="centerX" secondItem="sgp-nx-876" secondAttribute="centerX" id="Ngb-wG-2ss"/>
+                                    <constraint firstItem="Ai3-It-FPg" firstAttribute="leading" secondItem="sgp-nx-876" secondAttribute="leading" id="PT8-qa-9Hz"/>
+                                    <constraint firstItem="WIO-QS-2ep" firstAttribute="bottom" secondItem="Ai3-It-FPg" secondAttribute="bottom" constant="120" id="UVD-Pp-whB"/>
+                                    <constraint firstAttribute="bottom" secondItem="62Q-kg-1Y0" secondAttribute="bottom" constant="16" id="Uep-6q-VfI"/>
+                                    <constraint firstItem="6Ze-Fz-1qJ" firstAttribute="centerX" secondItem="v3H-Fa-PAh" secondAttribute="centerX" id="WXy-Bi-jCa"/>
+                                    <constraint firstItem="bIZ-I7-T7M" firstAttribute="top" secondItem="Ai3-It-FPg" secondAttribute="bottom" id="Xdq-Rz-dDI"/>
+                                    <constraint firstAttribute="trailing" secondItem="bIZ-I7-T7M" secondAttribute="trailing" id="bSd-sn-bep"/>
+                                    <constraint firstItem="bIZ-I7-T7M" firstAttribute="leading" secondItem="sgp-nx-876" secondAttribute="leading" id="eJt-fV-BB8"/>
+                                    <constraint firstItem="WIO-QS-2ep" firstAttribute="leading" secondItem="sgp-nx-876" secondAttribute="leading" id="hHI-SY-yOb"/>
+                                    <constraint firstAttribute="bottom" secondItem="bIZ-I7-T7M" secondAttribute="bottom" id="p5q-Ko-S4z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="sgp-nx-876" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="405-3a-aqH"/>
+                            <constraint firstItem="sgp-nx-876" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D4A-S1-Mip"/>
+                            <constraint firstItem="sgp-nx-876" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="DEw-FB-tMP"/>
+                            <constraint firstItem="sgp-nx-876" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TJU-XF-BPu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgMap" width="362" height="341"/>
+        <image name="getSetGoLogo" width="168.5" height="72.5"/>
+        <image name="gradientBg" width="360" height="424.5"/>
+        <image name="launchScreenCloud" width="361" height="262.5"/>
+        <image name="walking" width="107.5" height="143"/>
+    </resources>
+</document>

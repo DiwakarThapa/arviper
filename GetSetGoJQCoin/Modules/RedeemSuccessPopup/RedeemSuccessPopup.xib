@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Signika-SemiBold.ttf">
+            <string>Signika-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RedeemSuccessPopup" customModule="GetSetGoJQCoin" customModuleProvider="target">
+            <connections>
+                <outlet property="imgCongratulation" destination="jLk-EK-MoX" id="7xt-Lf-ZCK"/>
+                <outlet property="lblSuccess" destination="ZG4-9G-r8V" id="pYK-64-d2o"/>
+                <outlet property="popUpView" destination="rGN-aO-WAo" id="FZm-t2-sZX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3bt-gS-9C4">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGN-aO-WAo">
+                    <rect key="frame" x="37.5" y="184" width="300" height="319.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redeemBg" translatesAutoresizingMaskIntoConstraints="NO" id="blW-mj-Yu1">
+                            <rect key="frame" x="30" y="65" width="240" height="254.5"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="effect" translatesAutoresizingMaskIntoConstraints="NO" id="gXu-dw-3xr">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="319.5"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="congratsBg" translatesAutoresizingMaskIntoConstraints="NO" id="jLk-EK-MoX">
+                            <rect key="frame" x="15" y="35" width="270" height="85"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="85" id="SKV-2a-tiM"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success" translatesAutoresizingMaskIntoConstraints="NO" id="G9S-zh-dAG">
+                            <rect key="frame" x="126.5" y="120" width="47" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="MOZ-Sg-AZO"/>
+                                <constraint firstAttribute="width" constant="47" id="TyN-r4-q3f"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Code Is Successfully Redeemed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZG4-9G-r8V">
+                            <rect key="frame" x="45" y="170" width="210" height="44.5"/>
+                            <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika SemiBold" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="okbg" translatesAutoresizingMaskIntoConstraints="NO" id="OPo-Qw-LDS">
+                            <rect key="frame" x="75" y="234.5" width="150" height="40"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="374-GP-q8Y">
+                            <rect key="frame" x="75" y="234.5" width="150" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Xbd-wT-5wH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Signika-SemiBold" family="Signika SemiBold" pointSize="16"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonOk:" destination="-1" eventType="touchUpInside" id="jEh-Bu-Er3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gXu-dw-3xr" secondAttribute="trailing" id="1V8-R7-e10"/>
+                        <constraint firstItem="OPo-Qw-LDS" firstAttribute="trailing" secondItem="374-GP-q8Y" secondAttribute="trailing" id="2Xb-K1-bar"/>
+                        <constraint firstItem="jLk-EK-MoX" firstAttribute="leading" secondItem="blW-mj-Yu1" secondAttribute="leading" constant="-15" id="7tP-jy-FNg"/>
+                        <constraint firstItem="G9S-zh-dAG" firstAttribute="centerX" secondItem="jLk-EK-MoX" secondAttribute="centerX" id="8Br-em-AAY"/>
+                        <constraint firstItem="blW-mj-Yu1" firstAttribute="top" secondItem="rGN-aO-WAo" secondAttribute="top" constant="65" id="8a4-ha-Ksz"/>
+                        <constraint firstItem="G9S-zh-dAG" firstAttribute="top" secondItem="jLk-EK-MoX" secondAttribute="bottom" id="9hc-AT-d3b"/>
+                        <constraint firstItem="jLk-EK-MoX" firstAttribute="trailing" secondItem="blW-mj-Yu1" secondAttribute="trailing" constant="15" id="A1r-eL-QOf"/>
+                        <constraint firstItem="jLk-EK-MoX" firstAttribute="centerX" secondItem="blW-mj-Yu1" secondAttribute="centerX" id="B67-UR-D2V"/>
+                        <constraint firstItem="ZG4-9G-r8V" firstAttribute="top" secondItem="G9S-zh-dAG" secondAttribute="bottom" constant="15" id="HIS-qP-AkX"/>
+                        <constraint firstAttribute="bottom" secondItem="blW-mj-Yu1" secondAttribute="bottom" id="Hch-Uh-bHi"/>
+                        <constraint firstItem="gXu-dw-3xr" firstAttribute="leading" secondItem="rGN-aO-WAo" secondAttribute="leading" id="L67-xy-TcC"/>
+                        <constraint firstItem="gXu-dw-3xr" firstAttribute="leading" secondItem="rGN-aO-WAo" secondAttribute="leading" id="MKJ-jn-h12"/>
+                        <constraint firstItem="ZG4-9G-r8V" firstAttribute="leading" secondItem="blW-mj-Yu1" secondAttribute="leading" constant="15" id="OHv-73-e6P"/>
+                        <constraint firstItem="jLk-EK-MoX" firstAttribute="top" secondItem="rGN-aO-WAo" secondAttribute="top" constant="35" id="SRa-P6-Qjc"/>
+                        <constraint firstItem="ZG4-9G-r8V" firstAttribute="trailing" secondItem="blW-mj-Yu1" secondAttribute="trailing" constant="-15" id="U1i-Dw-2LP"/>
+                        <constraint firstAttribute="trailing" secondItem="gXu-dw-3xr" secondAttribute="trailing" id="VHI-kq-DXL"/>
+                        <constraint firstItem="ZG4-9G-r8V" firstAttribute="centerX" secondItem="374-GP-q8Y" secondAttribute="centerX" id="Z68-4S-TZb"/>
+                        <constraint firstAttribute="bottom" secondItem="374-GP-q8Y" secondAttribute="bottom" constant="45" id="aLk-Yd-3ye"/>
+                        <constraint firstItem="OPo-Qw-LDS" firstAttribute="top" secondItem="374-GP-q8Y" secondAttribute="top" id="auU-by-d42"/>
+                        <constraint firstItem="gXu-dw-3xr" firstAttribute="top" secondItem="rGN-aO-WAo" secondAttribute="top" id="dSn-3P-uc2"/>
+                        <constraint firstItem="OPo-Qw-LDS" firstAttribute="leading" secondItem="374-GP-q8Y" secondAttribute="leading" id="dUo-0M-hfi"/>
+                        <constraint firstAttribute="bottom" secondItem="gXu-dw-3xr" secondAttribute="bottom" id="fDM-r6-oUP"/>
+                        <constraint firstItem="OPo-Qw-LDS" firstAttribute="top" secondItem="ZG4-9G-r8V" secondAttribute="bottom" constant="20" id="fmw-YL-xRN"/>
+                        <constraint firstItem="374-GP-q8Y" firstAttribute="leading" secondItem="rGN-aO-WAo" secondAttribute="leading" constant="75" id="gv8-Q5-VjN"/>
+                        <constraint firstItem="OPo-Qw-LDS" firstAttribute="height" secondItem="374-GP-q8Y" secondAttribute="height" id="ic5-f1-Kd4"/>
+                        <constraint firstAttribute="trailing" secondItem="blW-mj-Yu1" secondAttribute="trailing" constant="30" id="rTD-YZ-tz7"/>
+                        <constraint firstItem="gXu-dw-3xr" firstAttribute="top" secondItem="rGN-aO-WAo" secondAttribute="top" id="rbL-t3-uxY"/>
+                        <constraint firstAttribute="width" constant="300" id="rmB-2V-9MG"/>
+                        <constraint firstItem="blW-mj-Yu1" firstAttribute="leading" secondItem="rGN-aO-WAo" secondAttribute="leading" constant="30" id="vsk-rg-vCj"/>
+                        <constraint firstAttribute="trailing" secondItem="374-GP-q8Y" secondAttribute="trailing" constant="75" id="yAj-CQ-AmM"/>
+                        <constraint firstAttribute="bottom" secondItem="gXu-dw-3xr" secondAttribute="bottom" id="yFX-mg-H7c"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rGN-aO-WAo" firstAttribute="centerX" secondItem="Z4e-mm-7st" secondAttribute="centerX" id="156-fq-fLa"/>
+                <constraint firstItem="rGN-aO-WAo" firstAttribute="centerY" secondItem="Z4e-mm-7st" secondAttribute="centerY" id="Jue-ZT-sXV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Z4e-mm-7st"/>
+            <point key="canvasLocation" x="312.80000000000001" y="-5.8470764617691158"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="congratsBg" width="264" height="77"/>
+        <image name="effect" width="291.5" height="269"/>
+        <image name="okbg" width="134.5" height="46.5"/>
+        <image name="redeemBg" width="225" height="213.5"/>
+        <image name="success" width="48" height="38"/>
+    </resources>
+</document>
